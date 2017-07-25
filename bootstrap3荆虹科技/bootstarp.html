@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				color: white;
+			}
+			
+			.banner1{
+				width: 100%;
+				height: 100vh;
+				background: url(img/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi9iY2EwZTQwOTk5M2ZlOWU0OWIzMGZlZTFmMmNmZjQwOC5qcGc_p_p100_p_3D.jpg);
+			}
+			.banner2{
+				width: 100%;
+				height: 100vh;
+				background: url(img/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi83MWZmMjQ1ZTRhMjE2ODRhZDBhNWFjOTg4ZGFmZDExMi5qcGc_p_p100_p_3D.jpg);
+			}
+			.banner3{
+				width: 100%;
+				height: 600px;
+				
+				background: url(img/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi82MjhjZGM0NWY0MmZlMTZlMWZiZmE2Y2ZiMzFjMTZmMC5qcGc_p_p100_p_3D.jpg);
+			}
+			.banner4{
+				width: 100%;
+				height: 600px;
+				background: url(img/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi9jMGNjOTE4MTI1YWQwMzY2YWU4NzlhMWU4ZmUyMmVjOS5qcGc_p_p100_p_3D.jpg);
+			}
+			.footer{
+				width: 100%;
+				height: 100px;
+				background: black;
+				line-height: 100px;
+			}
+			.back-to-top{
+				position: fixed;
+				bottom: 50px;
+				right: 20px;
+				
+			}
+			.back-to-top>a{
+				color:white;
+				text-decoration: none;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top " style="background: black;">
+			<div class="container-fluid">
+	   			<div class="collapse navbar-collapse navbar-right" id="bs">
+					<ul class="nav navbar-nav">
+						
+						<li class="dropdown active">
+							<a id="xllb" data-toggle="dropdown" href="#">
+								<span>终端产品</span>
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="xllb">
+								<li><a href="#">智能门锁</a></li>
+								<li><a href="#">智能枪柜</a></li>
+								
+							</ul>
+						</li>
+						<li>
+							<a href="#">应用系统</a>
+						</li>
+						<li>
+							<a href="#">嵌入模块</a>
+						</li>
+						<li>
+							<a href="#">联系我们</a>
+						</li>
+					</ul>			
+	   			</div>	
+	   			<div class="navbar-header navbar-right">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					 </button>
+					<a class="navbar-brand" href="#">首页</a>
+	   			</div>
+	   			<div class="navbar-header navbar-left">
+		   			<img  src="img/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi9hMjMyZWIzOWYzZWE4YzBjN2MyNjE3ZjliZjVhOWU3NS5wbmc_p_p100_p_3D.png"style="width: 60px;height: 60px;"/>
+					<span  class="h3" style="color: white;position:relative;top: 8px;">荆虹科技</span>		
+				</div>
+			</div>
+		</nav>
+		<!--banner-->
+		<div id="carousel-example-generic" class="carousel slide banner" data-ride="carousel" style="position: relative;top: 30px;">
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="img/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi8xYTQ5OTI1NmEzYzgyZDUxOGExYTlmZDg3YzQ0NWFlYi5qcGc_p_p100_p_3D.jpg" alt="..." style="width: 100%; height:100vh;">
+				</div>
+				<div class="item">
+					<img src="img/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi8wZDczNWM2YzlkYzQ5MzNkMzllNjBjMzE5NTg5NWM4NC5qcGc_p_p100_p_3D.jpg" alt="..." style="width: 100%;height:100vh;">
+				</div>
+				<div class="item ">
+					<img src="img/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi9hNTdiNTBmOWJmYzI0NjY0NWNmNzQ1MWVkZTI2OTk0Mi5qcGc_p_p100_p_3D.jpg" alt="..." style="width: 100%;height:100vh;">
+				</div>
+			</div>	
+		</div>
+		<div class="container-fluid banner1" style="margin-top: 30px;" >
+			<h1 class="text-center" >荆虹科技</h1>
+			<h3 class="text-center">致力于生物领域的核心算法</h3>
+			<div class="row text-center" style="margin-top: 50px;" >
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="img/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi9jOTQ5NGNiNTdiNGI0YWMxYTU4ODkwYmI0OWQ4YmRhOC5wbmc_p_p100_p_3D.png"/>
+					<h3>产品研发</h3>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="img/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi85OWYwYTg4YTY5MmJkYTc2YmFjNWE3OTM4YTIxNjIyNC5wbmc_p_p100_p_3D.png"/>
+					<h3>芯片设计</h3>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="img/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi9lNTE5YWUxZDdhOWMxNmQzZDA0N2YxYWE2ZDZiMzUwZS5wbmc_p_p100_p_3D.png"/>
+					<h3>数据管理</h3>
+				</div>
+			</div>
+			<h4 class="text-center" style="margin-top: 80px;">荆虹科技致力于生物识别领域的核心算法以及产品研发，应用SOC芯片设计，嵌入式系统开发，数据库管理，系统</h4>	
+			<h4 class="text-center" style="margin-top: 30px;">应用解决方案。为政府，企业社会机构提供算法级芯片级的产品以及技术服务，技术支持和应用系统解决方案。</h4>
+		</div>
+		<div class="container-fluid banner2" style="margin-top: -10px;" >
+			<h2 class="text-center" >核心技术</h2>
+			<h3 class="text-center">完全自主知识虹膜算法</h3>
+			<div class="row text-center" style="margin-top: 50px;" >
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="img/荆虹科技_files/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi83NDljZmI5YzRmMjYzY2Y4MDVjNTllZjlhNGIyMzBkYS5wbmc_p_p100_p_3D.png"/>
+					<h3>算法专利</h3>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="img/荆虹科技_files/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi8wMTMzNjQ0YzZiNDQwZmM0Y2ZiNDdjOGI1NzQ2Yjc0Yy5wbmc_p_p100_p_3D.png"/>
+					<h3>产品技术</h3>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="img/荆虹科技_files/aHR0cDovL3d3dy5qaW5naG9uZy10ZWNoLmNuL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wMi8zNGRiYjQ1YzhjYWE0ZGUwYWQyNzZlNTFmNmNjYTYzNC5wbmc_p_p100_p_3D.png"/>
+					<h3>解决方案</h3>
+				</div>
+			</div>
+			<h4 class="text-center" style="margin-top: 80px;">   完全自主知识产权的虹膜识别算法专利，自主产权的完整产品技术，成熟的行业应用解决方案</h4>	
+			
+		</div>
+		<div class="container-fluid banner3" >
+			<h1 class="text-center" style="color: black;font-weight: bold;margin-top: 100px;padding-bottom: 60px;">核心技术</h1>
+			<p class="text-center text-danger"  >一种高可用的融合特征虹膜认证</p>
+			<p class="text-center text-danger">一种基于Siamese双流深度网络的虹膜识别方法</p>
+			<p class="text-center text-danger ">一种基于多尺度深层主成份分析的虹膜图像特征提取方法</p>
+			<p class="text-center text-danger">一种基于卷积-解卷积网络的虹膜图像超分辨率方法</p>
+			<p class="text-center text-danger">一种基于卷积神经网络的瞳孔检测方法</p>
+			
+		</div>
+		<div class="container-fluid banner4" style="margin-top: -20pxs;" >
+			<h1 class="text-center" style="margin-top: 300px;">企业愿景</h1>
+			<h3 class="text-center">让每个人成为自己连通世界的密码</h3>
+		
+			
+		</div>
+		<div class="footer">
+			<p class="text-center"> Copyright &copy; 2016.荆虹科技 荆 ICP备17001668号</p>
+		</div>
+		<div class="back-to-top"><a href="#">回到顶部</a></div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+		$(document).scroll(function(){
+			if($("body").scrollTop()>600){
+				$(".back-to-top>a").css("display","block")
+			}else{
+				$(".back-to-top>a").css("display","none")
+			}
+			console.log($("body").scrollTop())
+		})
+		
+	})
+</script>
